@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="nav-bar">
+      <div class="title">
+        <span class="heading">WeatherWave</span>
+      </div>
+      <div class="nav-links">
+        <a class="link" href="#">Home</a>
+        <a class="link" href="#about">About Us</a>
+        <a class="link" href="#newsletter">Newsletter</a>
+      </div>
+    </nav>
+    <section class="section-main">
+      <div class="container">
+        <form class="form">
+          <input
+            type="text"
+            id="city"
+            name="city"
+            value=""
+            placeholder="Search Weather by city"
+          />
+          <button class="btn" id="search" type="submit">Search</button>
+        </form>
+      </div>
+      <div class="display-container">
+        <h2 class="city-heading">Weather in <span id="cityname"></span></h2>
+        <div class="display-card">
+          <p>Temperature - <span id="temp"></span> ℃</p>
+          <p>Min Temperature - <span id="min_temp"></span> ℃</p>
+          <p>Max Temperature - <span id="max_temp"></span> ℃</p>
+          <p>Wind Speed - <span id="wind_speed"></span> mph</p>
+          <p>Humidity- <span id="humidity"></span> %</p>
+          <p>Sunrise - <span id="sunrise"></span></p>
+          <p>Sunset - <span id="sunset"></span></p>
+          <p>Cloud PCT - <span id="cloud_pct"></span></p>
+        </div>
+      </div>
+    </section>
+    <section class="about" id="about">
+      <div class="about-container">
+        <h2 class="secondary-heading">About Us</h2>
+        <p class="info">
+          Embark on a journey of weather discovery with
+          <span class="app-txt">WeatherWave</span>, where meteorology meets
+          user-friendly innovation. At our core, we believe that understanding
+          the weather should be straightforward and enjoyable. We are driven by
+          a shared passion for delivering unparalleled weather insights to our
+          users.
+        </p>
+        <p class="info">
+          <span class="app-txt">WeatherWave</span> is crafted by a Front-end
+          developer
+          <a
+            class="link-txt"
+            target="_blank"
+            href="https://shashankcv-developer-portfolio.netlify.app/"
+            >SHASHANK</a
+          >. Recognizing the importance of accurate and timely weather
+          information in people's lives, where users could effortlessly access
+          the latest forecasts and make informed decisions. What sets us apart
+          is not just our commitment to precision but our genuine love for
+          making weather data accessible and engaging.
+        </p>
+        <p class="info">
+          As you explore the ever-changing world of weather with
+          <spa class="app-txt">WeatherWave</spa>, know that we are here to
+          empower you with the knowledge and insights you need. Thank you for
+          choosing us as your trusted companion in weather exploration. We look
+          forward to being part of your daily weather journey.
+        </p>
+      </div>
+    </section>
+    <section class="newsletter" id="newsletter">
+      <div class="section-news">
+        <h2 class="secondary-heading">Newsletter</h2>
+        <p class="news-info">Subscribe to get daily weather updates vai mail</p>
+        <form class="form-news" netlify>
+          <input
+            type="email"
+            name="email"
+            placeholder="Enter Your Email"
+            id="email"
+            class="email-inpt"
+          />
+          <button class="btn btn-news">Subscribe</button>
+        </form>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="footer-container">
+        <h5>&copy; WeatherWave | All Rights Reserved 2024 |</h5>
+        <p>
+          <a
+            target="_blank"
+            class="link-txt"
+            href="https://shashankcv-developer-portfolio.netlify.app/"
+            >SHASHANK</a
+          >
+        </p>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
